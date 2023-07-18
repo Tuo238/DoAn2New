@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Flash : MonoBehaviour
 {
+    public AudioSource AudioRing;
+    public AudioClip ringtone;
     public GameObject PhoneOnPlayer;
     public GameObject pickUpPrompt;
 
@@ -50,24 +52,6 @@ public class Flash : MonoBehaviour
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
             PickUpPhone();
-            //    StartDialogue();
-            //    if (Input.GetMouseButtonDown(0))
-            //    {
-            //        if (textComponent.text == lines[index])
-            //        {
-            //            NextLine();
-            //        }
-            //        else
-            //        {
-            //            StopAllCoroutines();
-            //            textComponent.text = lines[index];
-            //        }
-            //    }
-            //}
-            //else if (Input.GetKeyDown(KeyCode.P))
-            //{
-            //    PutDownPhone();
-            //}
         }
     }
 
@@ -77,44 +61,9 @@ public class Flash : MonoBehaviour
         PhoneOnPlayer.SetActive(true);
         pickUpPrompt.SetActive(false);
         isPhonePickedUp = true;
+        AudioRing.clip = ringtone;
+        AudioRing.Play();
     }
 
-    //private void PutDownPhone()
-    //{
-    //    gameObject.SetActive(true);
-    //    PhoneOnPlayer.SetActive(false);
-    //    pickUpPrompt.SetActive(true);
-    //    //isPhonePickedUp = false;
-    //}
-
-
-    //void StartDialogue()
-    //{
-    //    index = 0;
-    //    StartCoroutine(TypeLine());
-    //}
-
-    //IEnumerator TypeLine()
-    //{
-    //    foreach (char c in lines[index].ToCharArray())
-    //    {
-    //        textComponent.text += c;
-    //        yield return new WaitForSeconds(textSpeed);
-    //    }
-    //}
-
-    //void NextLine()
-    //{
-    //    if (index < lines.Length - 1)
-    //    {
-    //        index++;
-    //        textComponent.text = string.Empty;
-    //        StartCoroutine(TypeLine());
-    //    }
-    //    else
-    //    {
-    //        gameObject.SetActive(false);
-    //    }
-    //}
 }
 
