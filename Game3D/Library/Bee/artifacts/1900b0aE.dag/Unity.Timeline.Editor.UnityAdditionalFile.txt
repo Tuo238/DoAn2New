@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
 /Users/tuobui/Documents/DoAn2_New/Game3D
-=======
-D:\Subject\Doan2\DoAn2New\Game3D
->>>>>>> Stashed changes
