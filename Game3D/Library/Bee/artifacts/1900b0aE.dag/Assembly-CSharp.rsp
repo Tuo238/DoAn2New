@@ -387,13 +387,18 @@
 "Assets/Script/CursorOff.cs"
 "Assets/Script/CursorOn.cs"
 "Assets/Script/Dialouge.cs"
+"Assets/Script/FirePistol.cs"
+"Assets/Script/FlameAnimation.cs"
 "Assets/Script/jumpscare.cs"
 "Assets/Script/Keycode.cs"
 "Assets/Script/PhoneDrop.cs"
 "Assets/Script/PickUpPhone.cs"
 "Assets/Script/PickUpPhone2.cs"
+"Assets/Script/PickupPistol.cs"
 "Assets/Script/PlayerCasting.cs"
 "Assets/Script/PutDown.cs"
+"Assets/Script/Sequences/BZJumpTrigger.cs"
+"Assets/Script/ZombieDeath.cs"
 -langversion:9.0
 
 /deterministic
