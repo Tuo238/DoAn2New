@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class BZJumpTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public AudioSource DoorBang;
+    public AudioSource DoorJumpMusic;
+    public GameObject TheZombie;
+    //public GameObject TheDoor;
+
+
+    void OnTriggerEnter()
     {
-        
+        GetComponent<BoxCollider>().enabled = false;
+        //TheDoor.GetComponent<Animation>().Play("JumpDoorAnim");
+        DoorBang.Play();
+        TheZombie.SetActive(true);
+        StartCoroutine(PlayJumpMusic());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator PlayJumpMusic()
     {
-        
+        yield return new WaitForSeconds(0.2f);
+        DoorJumpMusic.Play();
     }
 }
