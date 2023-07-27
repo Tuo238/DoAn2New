@@ -14,6 +14,7 @@ public class CursorOn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Cursor.visible = true;
+        Screen.lockCursor = false;
     }
 }

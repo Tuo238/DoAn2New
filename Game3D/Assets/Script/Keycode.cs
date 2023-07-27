@@ -14,6 +14,13 @@ public class Keycode : MonoBehaviour
     string alpha;
     public TextMeshProUGUI UiText = null;
 
+    public void CursorOn()
+    {
+        Cursor.visible = true;
+        Screen.lockCursor = false;
+    }
+
+
     public void CodeFunction(string Numbers)
     {
         NrIndex++;
