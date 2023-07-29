@@ -8,7 +8,7 @@ using TMPro;
 
 public class Keycode : MonoBehaviour
 {
-    string Code = "4321";
+    string Code = "8351";
     string Nr = null;
     int NrIndex = 0;
     string alpha;
@@ -27,7 +27,19 @@ public class Keycode : MonoBehaviour
     public GameObject TriggerToDisable;
     public GameObject PromptToDisable;
 
+    public AudioClip soundClip; // Assign the audio clip to play in the Inspector
+    private AudioSource audioSource;
 
+
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+
+        // Check if AudioSource is attached, and if not, add it
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+    }
 
 
     public void CursorOn()
@@ -67,8 +79,12 @@ public class Keycode : MonoBehaviour
             KeyPadToDisable.SetActive(false);
             TriggerToDisable.SetActive(false);
             PromptToDisable.SetActive(false);
-
-
+        }
+        else
+        {
+            audioSource.clip = soundClip;
+            audioSource.Play();
+            Nr = null;
         }
     }
     public void Delete()
