@@ -386,6 +386,7 @@
 "Assets/Scenes/keypadTut/Keypad/Script/keypad.cs"
 "Assets/Scenes/keypadTut/Scripts/timer.cs"
 "Assets/Script/ChangeScene.cs"
+"Assets/Script/CheckPassword.cs"
 "Assets/Script/CursorOff.cs"
 "Assets/Script/CursorOn.cs"
 "Assets/Script/Dialouge.cs"
@@ -394,6 +395,7 @@
 "Assets/Script/FlameAnimation.cs"
 "Assets/Script/jumpscare.cs"
 "Assets/Script/Keycode.cs"
+"Assets/Script/LaptopTrigger.cs"
 "Assets/Script/OpenTrigger.cs"
 "Assets/Script/PhoneDrop.cs"
 "Assets/Script/PickUpPhone.cs"
@@ -402,6 +404,7 @@
 "Assets/Script/PlayerCasting.cs"
 "Assets/Script/PutDown.cs"
 "Assets/Script/Sequences/BZJumpTrigger.cs"
+"Assets/Script/SetText.cs"
 "Assets/Script/ZombieDeath.cs"
 -langversion:9.0
 
