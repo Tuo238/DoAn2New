@@ -396,6 +396,7 @@
 "Assets/Script/jumpscare.cs"
 "Assets/Script/Keycode.cs"
 "Assets/Script/LaptopTrigger.cs"
+"Assets/Script/MainMenu.cs"
 "Assets/Script/OpenTrigger.cs"
 "Assets/Script/PhoneDrop.cs"
 "Assets/Script/PickUpPhone.cs"
@@ -405,6 +406,7 @@
 "Assets/Script/PutDown.cs"
 "Assets/Script/Sequences/BZJumpTrigger.cs"
 "Assets/Script/SetText.cs"
+"Assets/Script/SplashMenu.cs"
 "Assets/Script/ZombieDeath.cs"
 -langversion:9.0
 
