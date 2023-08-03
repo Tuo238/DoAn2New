@@ -10,15 +10,17 @@ public class CheckPassword : MonoBehaviour
     public GameObject doorUnlocked;
     public GameObject display;
     public GameObject trigger;
+    public GameObject prompt;
 
-    public AudioClip correctSoundClip; // Assign the correct sound clip to play in the Inspector
-    public AudioClip wrongSoundClip;   // Assign the wrong sound clip to play in the Inspector
-    private AudioSource audioSource;
+
+    //public AudioClip correctSoundClip; // Assign the correct sound clip to play in the Inspector
+    //public AudioClip wrongSoundClip;   // Assign the wrong sound clip to play in the Inspector
+    //private AudioSource audioSource;
 
     void Start()
     {
         inputTextField = GetComponent<InputField>();
-        audioSource = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
         Cursor.visible = true;
         Screen.lockCursor = false;
     }
@@ -29,13 +31,14 @@ public class CheckPassword : MonoBehaviour
         {
             case "werty":
                 RightAnswer();
+                Debug.Log("right");
                 break;
             case "12345":
                 Debug.Log("hello2");
                 break;
 
             default:
-                WrongAnswer();
+                Debug.Log("wrong");
                 break;
         }
     }
@@ -46,18 +49,19 @@ public class CheckPassword : MonoBehaviour
         doorUnlocked.SetActive(true);
         display.SetActive(false);
         trigger.SetActive(false);
+        prompt.SetActive(false);
         Cursor.visible = false;
         Screen.lockCursor = true;
 
         // Play the correct sound
-        audioSource.clip = correctSoundClip;
-        audioSource.Play();
+        //audioSource.clip = correctSoundClip;
+        //audioSource.Play();
     }
 
     public void WrongAnswer()
     {
         // Play the wrong sound
-        audioSource.clip = wrongSoundClip;
-        audioSource.Play();
+        //audioSource.clip = wrongSoundClip;
+        //audioSource.Play();
     }
 }

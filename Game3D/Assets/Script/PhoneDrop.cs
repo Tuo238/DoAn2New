@@ -9,6 +9,8 @@ public class PhoneDrop : MonoBehaviour
     public GameObject PhoneOnGround;
     public GameObject putDownPrompt;
     public GameObject DialougeBox;
+    public GameObject DoorTrigger;
+
 
     public TextMeshProUGUI textComponent;
     public string[] lines;
@@ -23,6 +25,7 @@ public class PhoneDrop : MonoBehaviour
         PhoneOnGround.SetActive(false);
         putDownPrompt.SetActive(false);
         DialougeBox.SetActive(false);
+        DoorTrigger.SetActive(true);
         textComponent.text = string.Empty;
         StartDialogue();
 

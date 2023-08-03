@@ -6547,11 +6547,35 @@ MonoBehaviour:
   PhoneOnGround: {fileID: 1838510289}
   putDownPrompt: {fileID: 613968799}
   DialougeBox: {fileID: 1037523701}
+  DoorTrigger: {fileID: 1539881236}
   textComponent: {fileID: 424113402}
   lines:
-  - 123
-  - 456
-  - 789
+  - 'Dad: (Looking concerned) Hello?'
+  - 'You: (Eagerly) Hey, Dad, I''m just heading to school. Is everything okay?'
+  - 'Dad: (Worried) Listen, I need you to listen carefully, okay? There''s something
+    going on in the school, and it''s not safe.'
+  - 'You: (Confused) What do you mean, Dad? Is it about your work?'
+  - 'Dad: (Sighs) Yes, it''s about my work. Something went terribly wrong in the
+    lab, and there''s been an outbreak. It''s causing people to turn into... into
+    something dangerous. I don''t have time to explain now, but you must stay away
+    from the school.'
+  - 'You: (Nervous) What should I do then? Should I call the police?'
+  - 'Dad: Yes, yes, call the police immediately and tell them what''s happening.
+    They''ll know what to do. Your safety is the most important thing right now.
+    I''ll try to find your mother, and we''ll figure this out, okay?'
+  - 'You: (Reluctant) But, Dad, what if you need help? I can''t just leave you and
+    Mom behind!'
+  - 'Dad: (Urgently) No, listen to me. I know you want to help, but it''s too dangerous.
+    I can''t lose you, too. Promise me you''ll call the police and stay away from
+    the school.'
+  - 'You: (Torn) Okay, I promise. But, please, be careful, Dad. I love you.'
+  - 'Dad: (Softly) I love you too, kiddo. Now, hang up and stay safe. I''ll do everything
+    I can to protect your mother and find a way to fix this. We''ll be together again
+    soon, I promise.'
+  - 'You: (Nods) Okay, Dad. Take care. I''ll call the police now.'
+  - You:...
+  - 'You: "I can''t abandon them. I have to save Mom and Dad, no matter the risks.
+    I won''t let fear stop me."'
   textSpeed: 0
 --- !u!1001 &925520491
 PrefabInstance:
@@ -11231,7 +11255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1539881237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13013,10 +13037,33 @@ MonoBehaviour:
   pickUpPrompt: {fileID: 431915373}
   textComponent: {fileID: 424113402}
   lines:
-  - 1212121
-  - 45454545
-  - 65656565
-  textSpeed: 0
+  - 'Dad: (Looking concerned) Hello?'
+  - 'You: (Eagerly) Hey, Dad, I''m just heading to school. Is everything okay?'
+  - 'Dad: (Worried) Listen, I need you to listen carefully, okay? There''s something
+    going on in the school, and it''s not safe.'
+  - 'Dad: (Worried) Listen, I need you to listen carefully, okay? There''s something
+    going on in the school, and it''s not safe.'
+  - 'You: (Confused) What do you mean, Dad? Is it about your work?'
+  - 'Dad: (Sighs) Yes, it''s about my work. Something went terribly wrong in the
+    lab, and there''s been an outbreak. It''s causing people to turn into... into
+    something dangerous. I don''t have time to explain now, but you must stay away
+    from the school.'
+  - 'You: (Nervous) What should I do then? Should I call the police?'
+  - 'Dad: Yes, yes, call the police immediately and tell them what''s happening.
+    They''ll know what to do. Your safety is the most important thing right now.
+    I''ll try to find your mother, and we''ll figure this out, okay?'
+  - 'You: (Reluctant) But, Dad, what if you need help? I can''t just leave you and
+    Mom behind!'
+  - 'Dad: (Urgently) No, listen to me. I know you want to help, but it''s too dangerous.
+    I can''t lose you, too. Promise me you''ll call the police and stay away from
+    the school.'
+  - 'You: (Torn) Okay, I promise. But, please, be careful, Dad. I love you.'
+  - 'Dad: (Softly) I love you too, kiddo. Now, hang up and stay safe. I''ll do everything
+    I can to protect your mother and find a way to fix this. We''ll be together again
+    soon, I promise.'
+  - 'Player: (Nods) Okay, Dad. Take care. I''ll call the police now.'
+  - test
+  textSpeed: 3
 --- !u!4 &1838510309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 463835053371953216, guid: 9c993bdd1f0fb3e4da5b61dabec5fbb3, type: 3}

@@ -39,13 +39,6 @@ public class SetText : MonoBehaviour
         {
             text.text = "What letter is next in this sequence? J, F, M, A, M, J, J, A, S, O, N, ____";
         }
-        //else
-        //{
-        //    text.text = "hello";
-
-        //}
-
-
 
     }
 
