@@ -33,6 +33,11 @@ public class ProgressBar : MonoBehaviour
     private AudioSource audiosource;
     private Text txtTitle;
     private float barValue;
+
+    public ProgressBar Pb;
+
+    
+
     public float BarValue
     {
         get { return barValue; }
@@ -94,7 +99,7 @@ public class ProgressBar : MonoBehaviour
     {
         if (!Application.isPlaying)
         {           
-            UpdateValue(50);
+            UpdateValue(100);
             txtTitle.color = TitleColor;
             txtTitle.font = TitleFont;
             txtTitle.fontSize = TitleFontSize;
