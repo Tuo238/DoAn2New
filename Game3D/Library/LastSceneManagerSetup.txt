@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/JapaneseSchool/Scenes/DemoSchool.unity
+- path: Assets/Agarkova_CG/Woman_with_cap/Demo/Woman_with_cap.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -14,6 +14,11 @@ public class SetText : MonoBehaviour
     {
         randomNumber = Random.Range(1, 6); // returns a random integer between 1 and 4
         Debug.Log(randomNumber);
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Debug.Log("Start"); // returns a random integer between 1 and 4
+        }
+
     }
 
     // Update is called once per frame
@@ -39,6 +44,12 @@ public class SetText : MonoBehaviour
         {
             text.text = "What letter is next in this sequence? J, F, M, A, M, J, J, A, S, O, N, ____";
         }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Debug.Log("Update"); // returns a random integer between 1 and 4
+        }
+
 
     }
 
