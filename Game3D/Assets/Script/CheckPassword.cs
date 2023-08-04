@@ -52,6 +52,7 @@ public class CheckPassword : MonoBehaviour
         prompt.SetActive(false);
         Cursor.visible = false;
         Screen.lockCursor = true;
+
         // Play the correct sound
         //audioSource.clip = correctSoundClip;
         //audioSource.Play();
